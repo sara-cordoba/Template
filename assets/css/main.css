@@ -327,6 +327,7 @@ a h6:hover {
 }
 .tj-btn-secondary:hover {
   background: var(--tj-theme-primary);
+  color: #4b3752;
 }
 .hero-section.style-3 .tj-btn-secondary {
   border-color: var(--tj-white);
@@ -422,7 +423,7 @@ a h6:hover {
 }
 .social-icons li a:hover {
   border: 1px solid var(--tj-theme-primary);
-  color: var(--tj-white);
+  color: #4b3752;
 }
 .social-icons li a:hover::before {
   -webkit-transform: scale(1.1);
@@ -1881,9 +1882,11 @@ body.loaded {
   overflow: hidden;
 }
 .popup_modal_img img {
-  width: 815px;
-  height: 450px;
-  -o-object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-width: 815px;
+  max-height: 450px;
+  object-fit: cover;
 }
 .popup_modal_content {
   background-color: var(--tj-white);
@@ -2235,6 +2238,27 @@ body.loaded {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+
+.skills-widget .skill-item .icon-box i {
+  font-size: 60px;
+  filter: grayscale(90%);
+  -webkit-filter: grayscale(90%);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.skills-widget .skill-item:hover .icon-box i {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.skills-widget .skill-typescript .icon-box img {
+  max-width: 60px;
+  max-height: 60px;
 }
 
 .skills-widget .skill-item:hover .icon-box img {
